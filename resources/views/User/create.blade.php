@@ -14,12 +14,8 @@
                     <form method="post" action="/criado">
                         @csrf
                         <div class="single-input">
-                            <input type="text" class="input" id="nome" name="CreateUserName" maxlength="25" required>
-                            <label for="Nome">Nome</label>
-                        </div>
-                        <div class="single-input">
-                            <input type="text" class="input" id="nome" name="CreateUserCPF" maxlength="14" required>
-                            <label for="cpf-cnph">CPF/CNPJ</label>
+                            <input type="email" class="input" id="nome" name="CreateUserEmail" maxlength="25" required>
+                            <label for="Nome">Email</label>
                         </div>
                         <div class="single-input">
                             <input type="password" class="input" id="senha" name="CreateUserPasswd" maxlength="10" required>

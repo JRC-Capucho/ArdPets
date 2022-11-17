@@ -22,11 +22,13 @@ Route::get('/', function () {
 });
 
 
-//  páginas  que criar conta e login do usuário
-Route::get('/iniciar-sessao', [LoginController::class,'index']);
-Route::post('/acesso', [LoginController::class,'login']);
+//  páginas que criam a conta
 Route::get('/criar-conta', [LoginController::class,'create']);
 Route::post('/criado', [LoginController::class,'store']);
+
+// Páginas que acessam a conta
+Route::get('/iniciar-sessao', [LoginController::class,'index']);
+Route::post('/acesso', [LoginController::class,'login']);
 
 // páginas principais
 Route::get('/principal',[HomeController::class,'index']);

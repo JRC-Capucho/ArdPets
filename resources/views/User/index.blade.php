@@ -13,7 +13,7 @@
                     <form method="post" action="/acesso">
                         @csrf
                         <div class="single-input">
-                            <input type="text" class="input" id="nome" name="IndexUserName" maxlength="25" required>
+                            <input type="email" class="input" id="nome" name="IndexUserEmail" maxlength="25" required>
                             <label for="Nome">Nome</label>
                         </div>
                         <div class="single-input">

@@ -24,13 +24,10 @@ class HomeController extends Controller
             $Pet = DB::select($Sql, [$UserJson->id]);
             return view('HomePage.index')->with('Pets', $Pet);
         } else {
-            $Pet = [
-               "nome" => "Cadastre seu Pet",
-               "porte" => "Nós iremos facilitar a sua vida e a do seu Pet",
-               "idade" => " "
-            ];
+            $Pet = DB::select($Sql,[1]);
             return view('HomePage.index')->with('Pets', $Pet);
         }
+
 
     }
 
