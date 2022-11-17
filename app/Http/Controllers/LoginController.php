@@ -33,7 +33,9 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
+
         $User = [$request->input('IndexUserEmail')];
+
         $Sql = "select id,email,senha from dono where email=?";
         $NewNome = DB::select($Sql, $User);
         foreach ($NewNome as $name) {
@@ -42,6 +44,7 @@ class LoginController extends Controller
             $AuxJson = json_encode($Aux);
             $file = fopen('UserJson.json', 'w');
             fwrite($file, $AuxJson);
+
 
             if ($name->email == $request->input('IndexUserEmail') && $name->senha == $request->input('IndexUserPasswd'))
                 return redirect('/principal');

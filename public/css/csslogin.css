@@ -179,15 +179,14 @@ form div.single-input .input:valid ~ label{
 
 
 .redes-sociais{
-    margin-top: 100%;
-    margin-left: 10%;
+    margin-top: 150%;
+    display: flex;
 }
-.redes-sociaisCad{
-    margin-top: 135%;
-    margin-left: 10%;
-}
-.redes-sociais img{
-    width: 35%;
+
+.redes-sociais p{
+    color: white;
+    margin-left: 32%;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 /* DIV DA DIREITA */
@@ -215,17 +214,11 @@ p{
 .wiki{
     margin-left: 40%;
 }
-.sn{
-    margin-left: 6%;
-}
-.snCad{
-    margin-left: 6%;
-    width: 100%;
-}
+
 
 .btn-voltar{
-    width: 30%;
-    margin-left: -20%;
+    width: 8%;
+    margin-left: 95%;
 }
 .cadastrobtn {
     border-color: #19db70;
@@ -237,7 +230,8 @@ p{
     border-bottom-right-radius: 100px;
     font-weight: bold;
     font-size: 2.2vmin;
-    margin-left: 35%;
+    margin-left: 390%;
+    margin-top: 2%;
 }
 .cadastrobtn:hover {
     background-color: #024b23 !important;
@@ -245,7 +239,7 @@ p{
 }
 
 .nameAP{
-    margin-top: 15%;
+    margin-top: 25%;
 }
 .nameAP p{
     font-size: 30px;
@@ -272,7 +266,7 @@ p{
     border-color: #19db70;
     background-color: #19db70;
     color: white;
-    width: 100%;
+    width: 80%;
     border-radius: 30px;
     font-weight: bold;
     font-size: 1em;
@@ -282,6 +276,17 @@ p{
     border-color: white !important;
 }
 
+.modal-body{
+    display: flex;
+}
+
+.modal-body img{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*cores:
 verde: #48ff9a;
